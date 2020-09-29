@@ -1,0 +1,32 @@
+server:
+  port: 80
+
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    defaultPropertyInclusion: NON_EMPTY
+    deserialization:
+      fail_on_unknown_properties: false
+    parser:
+      allow_single_quotes: true
+      allow_unquoted_control_chars: true
+    serialization:
+      fail_on_empty_beans: false
+      indent_output: true
+
+
+
+http_pool:
+  max_total: 200
+  default_max_per_route: 100
+  connect_timeout: 5000
+  connection_request_timeout: 1000
+  socket_timeout: 65000
+  validate_after_inactivity: 2000
+
+mini:
+  uri: https://api.weixin.qq.com/sns/jscode2session?
+  app_id: wxc3d0793eead2fd31
+  app_secret: 74cf973ae7fc5dec69a1bed8a25e285a
+  grant_type: authorization_code
