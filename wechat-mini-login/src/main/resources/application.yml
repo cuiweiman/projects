@@ -27,6 +27,6 @@ http_pool:
 
 mini:
   uri: https://api.weixin.qq.com/sns/jscode2session?
-  app_id: wxc3d0793eead2fd31
-  app_secret: 74cf973ae7fc5dec69a1bed8a25e285a
+  app_id: 不能说
+  app_secret: 这个也不能说
   grant_type: authorization_code
