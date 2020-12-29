@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: /file
+
+# MinIO 文件存储配置信息
+minio:
+  url: http://127.0.0.1:9000
+  username: test
+  password: test123
